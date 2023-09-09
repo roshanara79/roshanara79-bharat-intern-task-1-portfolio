@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design </title>
+    <link rel="stylesheet" href="style.css">
+    <!---Font awesome cdn font icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head> 
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class = "logo" >
+                    <i  class="fa-solid  fa -a"></i>
+                    <div class="logo-text">Roshan Ara</div>               
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">About
+                            
+                        </a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>     
+            </header>     
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="file:///C:/Users/Roshan/Desktop/bharat-intern-task-1-portfolio/WhatsApp%20Image%202023-09-08%20at%2002.37.23.jpg" alt="profile pic">
+                </div>file
+                <div class="hero-text">
+                    <h5> Hi I'm <span class="input">Frontend Developer</span> </h5>
+                    <h1> Roshan Ara</h1>
+                    <p> I am a Student a passion for Web Designing.
+                        Roshan Ara is both a software engineer and a front-end developer, with a diverse range of skills including, Python.
+
+One key thing to notice is how the portfolio includes a lot of past projects. Instead of using a generic collage of projects, Roshan ara shows of python skills by highlighting a featured project first and varying the sizes of project screenshots for past work.  
+                    
+                    </p>      
+                    <div class="btn-group">
+                        
+                        <a href="file:///C:/Users/Roshan/Desktop/bharat-intern-task-1-portfolio/Roshan's%20Resume.pdf" class ="btn active">Download CV</a>
+                        <a href="#" class ="btn">Contact</a>
+                    </div>
+                    
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>    
+                        <a href="https://www.linkedin.com/in/roshan-ara-19b212202"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/itz_miss_.khan_"><i class="fa-brands fa-instagram"></i></a></i></a>
+                        <a href="https://github.com/roshanara79"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!--typed js for typing effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.queryselector(".tooglebtn");
+        var nav=document.queryselector(".navlinks");
+        var links=document.queryselector(".navlinks li");
+
+        togglebtn .addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Python Developer","Web Developer"],
+            typedSpeed:70,
+            bacKSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
